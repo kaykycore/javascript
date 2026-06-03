@@ -15,16 +15,24 @@
 <body>
     <h1>iniciando estudos DOM</h1>
     <p>aqui vai o resultado</p>
-    <div id="msg"> clique em mim</div>
+    <div id="msg">clique em mim</div>
+
     <script>
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByClassName('p')[1]
+         var corpo = document.body
+
+        var p1 = document.getElementsByTagName('p')[0]
+
+        var d = document.getElementById('msg')
+        d.innerText = 'Ola, mundo!'
+
         /*
-        var d = window;document.getElementById('msg')
-        d.style.background = 'green'
+        document.getElementById('msg')        // id
+        document.getElementsByTagName('p')    // tag
+        document.getElementsByClassName('txt')// classe
+        document.querySelector('#msg')        // seletor CSS
+        document.querySelector('.txt')        // classe
+        document.querySelector('p')           // tag
         */
-       var d = window.document.getElementsByName ('msg') [0]
-       d.innerText = 'ola'
     </script>
 </body>
 </html>
